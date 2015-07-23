@@ -10,6 +10,6 @@ function prob = calculateNMI( param )
     file = strcat(file, '.txt');
 
     M = dlmread(file);
-    prob = nmi(param.Z(1:100), M(1:100));
+    prob = nmi(param.Z, M);
 
 end
